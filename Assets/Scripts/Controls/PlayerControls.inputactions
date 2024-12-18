@@ -1,0 +1,132 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "e4b8e442-8f75-4ec7-909d-6ed34e2c9fe0",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "4e5d4f77-09e7-47c6-9240-e06857b1bbe2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "99bccb6b-8eea-4cc9-82fc-402faf903302",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Camera",
+            "id": "d6063677-551d-495c-b901-d4c769dac27c",
+            "actions": [
+                {
+                    "name": "CameraRotation",
+                    "type": "Value",
+                    "id": "66913a41-fb72-47ec-9f72-6e674ee7e990",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "CameraScroll",
+                    "type": "Value",
+                    "id": "e2bd2804-fa63-40c6-8e39-ee34957542b9",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1f82ce3b-8f75-48fd-80b4-56f4e16a4c2a",
+                    "path": "<Mouse>/scroll/y",
+                    "interactions": "",
+                    "processors": "Normalize(min=-120,max=120)",
+                    "groups": "",
+                    "action": "CameraScroll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "5af5f0a0-1a47-442b-afd0-8d710fd68ea7",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraRotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "a4500bf4-8287-400e-a5e5-be424046bf46",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "5a0ec572-4cdd-4d2c-acb1-82982e77f4c3",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "Interaction",
+            "id": "ef97d82e-bac9-4754-9e1e-51c6aea25045",
+            "actions": [
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "59175cbb-985f-4598-bf4f-592ca4e98cd2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b53d6a78-e35f-4e8c-b6d7-cfa3d50e58b0",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

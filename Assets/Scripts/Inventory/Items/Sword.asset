@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b197ecb2cde848149babe9767a3e2426, type: 3}
+  m_Name: Sword
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Sword
+  <Description>k__BackingField: Shiny, heavy and mighty... Someone must have lost
+    it.
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 68af237fd24ff2e47b0c820a1f3018d0,
+    type: 3}
+  <AssociatedPrefab>k__BackingField: {fileID: 8710882902776228472, guid: 07c729783711ed74f815c2197148c971,
+    type: 3}
